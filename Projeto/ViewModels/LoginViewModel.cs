@@ -1,5 +1,5 @@
 ﻿using System.Windows.Input;
-using WpfAppDemo.ViewModels;
+using Projeto.ViewModels;
 
 namespace Projeto.ViewModels
 {

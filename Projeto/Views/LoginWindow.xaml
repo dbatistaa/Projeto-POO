@@ -3,12 +3,30 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Projeto.Views"
+      xmlns:local="clr-namespace:Projeto.Views" xmlns:viewmodels="clr-namespace:Projeto.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:LoginViewModel}"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="LoginWindow">
+      Title="LoginWindow" Height="450" Width="800">
 
     <Grid>
+        
+         <StackPanel Background="Gray" Margin="269,124,306,172" RenderTransformOrigin="0.5,0.5" >
+     <StackPanel.RenderTransform>
+         <TransformGroup>
+             <ScaleTransform/>
+             <SkewTransform/>
+             <RotateTransform Angle="359.852"/>
+             <TranslateTransform/>
+         </TransformGroup>
+     </StackPanel.RenderTransform>
+     <Label Content="Username"></Label>
+     <TextBox Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="21"/>
+     <Label Content="Password" Height="33"></Label>
+     <TextBox Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+     <Button Content="Login" Command="{Binding LoginCommand}" CommandParameter="{Binding Username}" Height="23" Width="205" />
+
+ </StackPanel>
         
     </Grid>
 </Page>
