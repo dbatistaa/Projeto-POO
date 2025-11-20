@@ -10,15 +10,14 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Projeto.Views
 {
     /// <summary>
-    /// Interação lógica para LoginWindow.xam
+    /// Lógica interna para LoginWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Page
+    public partial class LoginWindow : Window
     {
         public LoginWindow()
         {
